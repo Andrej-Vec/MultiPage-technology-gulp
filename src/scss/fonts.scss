@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'icons';
+	src:  url('../fonts/icons.eot?uzmeyw');
+	src:  url('../fonts/icons.eot?uzmeyw#iefix') format('embedded-opentype'),
+	  url('../fonts/icons.ttf?uzmeyw') format('truetype'),
+	  url('../fonts/icons.woff?uzmeyw') format('woff'),
+	  url('../fonts/icons.svg?uzmeyw#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icons' !important;
+	//speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-message:before {
+	content: "\e909";
+  }
+  ._icon-eye:before {
+	content: "\e903";
+	
+  }
+  ._icon-vk:before {
+	content: "\e900";
+  }
+  ._icon-cart:before {
+	content: "\e901";
+  }
+  ._icon-compare:before {
+	content: "\e902";
+  }
+  ._icon-facebook:before {
+	content: "\e904";
+  }
+  ._icon-instagram:before {
+	content: "\e905";
+  }
+  ._icon-like:before {
+	content: "\e906";
+  }
+  ._icon-logo:before {
+	content: "\e907";
+  }
+  ._icon-menu:before {
+	content: "\e908";
+  }
+  ._icon-search:before {
+	content: "\e90a";
+  }
+  ._icon-twitter:before {
+	content: "\e90b";
+  }
+  
+
