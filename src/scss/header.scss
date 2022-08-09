@@ -1,3 +1,5 @@
+
+
 .header {
 
     // .header__body
@@ -487,6 +489,7 @@
     &__list {
         display: none;
         position: absolute;
+        z-index: 15;
         top: rem(20);
         padding-top: rem(20);
         left: rem(-15);

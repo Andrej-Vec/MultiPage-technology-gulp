@@ -2,6 +2,7 @@
 @import "fonts";
 @import "base/mixins";
 @import "base/swiper-bundle.min";
+@import "base/nouislider.min";
 @import url(https://fonts.googleapis.com/css?family=Exo:regular,500,600,700&display=swap);
 
 
@@ -98,6 +99,10 @@ body._lock {
 
 @import "header";
 @import "products-block";
+@import "footer";
+
+
+@import "catalog.scss";
 
 
 /* ============================================ */
@@ -499,5 +504,3 @@ body._lock {
 
 
 
-
-@import "footer";

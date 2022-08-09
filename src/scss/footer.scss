@@ -17,15 +17,20 @@
     padding-left: rem(45);
     @include adaptiveValue(' column-gap', 74, 36);
 
-  
-  
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+
+
     // .inner-footer__menu
 
     &__menu {}
 }
 
 .menu-footer {
-    
+
     // .menu-footer__list
 
     &__list {}
@@ -38,6 +43,37 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    //
+    &__btn {
+
+        font-weight: 700;
+        font-size: 20px;
+        color: #838688;
+        @include adaptiveValue('margin-bottom', 20, 14);
+        position: relative;
+       
+      
+
+       
+        @media (max-width: 580px) {
+            &::after {
+                content: url('@img/svgicons/arrow-right_black.svg');
+                position: absolute;
+                top: 0;
+                right: rem(-20);
+            }
+            &._spoller-active {
+                &::after {
+                    transition: transform 0.4s ease 0s;
+                    transform: rotate(90deg);
+                }
+                
+            }
+        }
+        
+        
     }
 
     // .menu-footer__link
@@ -64,12 +100,7 @@
     &__list {
         margin: rem(20) 0;
 
-        & li:last-child {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: rem(16);
-            color: #838688;
-        }
+
     }
 
     // .footer-contact__item
@@ -112,8 +143,8 @@
 
 .menu-footer__link_head {}
 
-
-.menu-cooperation li:first-child {
+/* 
+ .menu-cooperation li:first-child {
     @include adaptiveValue('margin-bottom', 20, 14);
 
     & a {
@@ -134,7 +165,7 @@
         color: #838688;
     }
 }
-
+ 
 .menu-for-clients li:first-child {
     @include adaptiveValue('margin-bottom', 20, 14);
 
@@ -145,7 +176,7 @@
         color: #838688;
     }
 }
-
+ */
 
 
 
@@ -159,9 +190,9 @@
 
     // .footer__info
 
-    &__info {
-    }
+    &__info {}
 }
+
 .info-footer {
 
     // .info-footer__line
@@ -174,9 +205,9 @@
 
     // .info-footer__block
 
-    &__block {
-    }
+    &__block {}
 }
+
 .block-info-footer {
 
     display: flex;
@@ -191,6 +222,7 @@
         align-items: flex-start;
         row-gap: rem(20);
     }
+
     // .block-info-footer__text
 
     &__text {
@@ -199,8 +231,7 @@
 
     // .block-info-footer__media
 
-    &__media {
-    }
+    &__media {}
 
     // .block-info-footer__web
 
@@ -208,31 +239,58 @@
         color: #838688;
     }
 }
+
 .media-info {
     display: flex;
     gap: rem(30);
     // .media-info__twitter
 
-    &__twitter {
-    }
+    &__twitter {}
 
     // .media-info__facebook
 
-    &__facebook {
-    }
+    &__facebook {}
 
     // .media-info__vk
 
-    &__vk {
-    }
+    &__vk {}
 
     // .media-info__instagram
 
-    &__instagram {
-    }
+    &__instagram {}
 
     &__icon {
         color: #4878A6;
-       
+
     }
 }
+
+/* .block__title{
+    position: relative;
+}
+
+.block._init .block__title{
+    cursor: pointer;
+} */
+
+/* 
+.block._init .block__title::before,
+.block._init .block__title::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: transform 0.3s ease 0s;
+} */
+
+/* .block._init .block__title::after {
+    transform: rotate(-90deg);
+}
+
+.block._init .block__title._active::after {
+    transform: rotate(0deg);
+}
+ */

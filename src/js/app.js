@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./swiper-bundle.min.js";
+import "./nouislider.min.js";
 import "./files/script.js";
 
 flsFunctions.isWebp();
