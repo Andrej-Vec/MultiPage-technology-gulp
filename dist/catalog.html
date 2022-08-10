@@ -76,33 +76,132 @@
 				</nav>
 				<h1 class="catalog__title">Каталог</h1>
 				<div class="catalog__body body-catalog">
-					<div data-spollers class="body-catalog__filter filter-catalog">
-						<div  class="filter-catalog__price price-catalog">
-							<button  data-spoller class="price-catalog__title filter-catalog__title _spoller-active">Цена, ₽</button>
-							<div class="price-catalog__body body-price">
-								<div id="range-slider" class="body-price__inputs">
-									<label class="body-price__label">
-										<span  class="body-price__text">от</span>
-										<input id="range-slider_1" class="body-price__input body-price__input_left" type="number" min=200 max=5000 placeholder="200" type="number">
+					
+					<div data-spollers="992,max" class="body-catalog__filter filter-catalog">
+						<button data-spoller  class="body-catalog__btn  _spoller-active">Фильтры</button>
+						<div data-spollers class="filter-catalog__btn">
+							<div  class="filter-catalog__price price-catalog">
+								<button  data-spoller class="price-catalog__title filter-catalog__title _spoller-active">Цена, ₽</button>
+								<div class="price-catalog__body body-price">
+									<div id="range-slider" class="body-price__inputs">
+										<label class="body-price__label">
+											<span  class="body-price__text body-price__text_left">от</span>
+											<input id="range-slider_1" class="body-price__input body-price__input_left" type="number" min=200 max=5000 placeholder="200" type="number">
+										</label>
+										<label class="body-price__label">
+											<span class="body-price__text">до</span>
+											<input id="range-slider_2" class="body-price__input" type="number" min=200 max=5000 placeholder="5000" type="number">
+										</label>
+									</div>
+									<button class="price-catalog__btn">Применить</button>
+								</div>
+							</div>
+							<div class="filter-catalog__check check-caralog filter-catalog__speed">
+								<button  data-spoller class="filter-catalog__title">Максимальная скорость (км/ч)</button>
+								<div class="check-caralog__body body-check">
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										45<small class="body-check_small">(2)</small>
 									</label>
-									<label class="body-price__label">
-										<span class="body-price__text">до</span>
-										<input id="range-slider_2" class="body-price__input" type="number" min=200 max=5000 placeholder="5000" type="number">
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										32<small class="body-check_small">(10)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										40<small class="body-check_small">(4)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										25<small class="body-check_small">(3)</small>
 									</label>
 								</div>
-								<button class="price-catalog__btn">Применить</button>
+							</div>
+							<div class="filter-catalog__check check-caralog filter-catalog__backlight">
+								<button  data-spoller class="filter-catalog__title _spoller-active">Подсветка</button>
+								<div class="check-caralog__body body-check">
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										Есть<small class="body-check_small">(78)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										Нет<small class="body-check_small">(164)</small>
+									</label>
+								</div>
+							</div>
+							<div class="filter-catalog__check check-caralog filter-catalog__power">
+								<button  data-spoller class="filter-catalog__title _spoller-active">Мощность двигателя (Ватт)</button>
+								<div class="check-caralog__body body-check">
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										2100<small class="body-check_small">(10)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										500<small class="body-check_small">(2)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										350<small class="body-check_small">(4)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										300<small class="body-check_small">(6)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										250<small class="body-check_small">(2)</small>
+									</label>
+								</div>
+							</div>
+							<div class="filter-catalog__check check-caralog filter-catalog__speed">
+								<button  data-spoller class="filter-catalog__title _spoller-active">Максимальная скорость (км/ч)</button>
+								<div class="check-caralog__body body-check">
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										45<small class="body-check_small">(2)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										32<small class="body-check_small">(10)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" type="checkbox">
+										<span class="check-box"></span>
+										40<small class="body-check_small">(4)</small>
+									</label>
+									<label class="body-check__label">
+										<input class="body-check__checkbox" checked type="checkbox">
+										<span class="check-box"></span>
+										25<small class="body-check_small">(3)</small>
+									</label>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="body-catalog__content">
-						<div class="body-catalog__control">
+						<!-- <div class="body-catalog__control">
 							<select class="control" name="">
 								<option value="1" selected>Сначала дорогие</option>
 								<option value="2">Сначала дорогие</option>
 								<option value="2">Сначала дорогие</option>
 								<option value="2">Сначала дорогие</option>
 							</select>
-						</div>
+						</div> -->
 						<div class="body-catalog__products">
 							<!-- articles -->
 							<article class="product-card">
@@ -494,7 +593,7 @@
 										<li class="pagging__item pagging__item_dot">
 											<a href="" class="pagging__link">...</a>
 										</li>
-										<li class="pagging__item">
+										<li class="pagging__item pagging__item_last">
 											<a href="" class="pagging__link">245</a>
 										</li>
 									</ul>

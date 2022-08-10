@@ -411,3 +411,14 @@ if(rangeslider) {
 };
 
 
+const filter = document.querySelector('.body-catalog__btn');
+
+filter.addEventListener('click', (e) => {
+	//
+	 const windowOuterWidth = window.outerWidth;
+	if(windowOuterWidth < 992) {
+		e.preventDefault();
+	} 
+
+})
+
