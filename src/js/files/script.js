@@ -72,6 +72,89 @@ const slide = new Swiper('.attempt', {
 });
 
 
+if (document.querySelector('.info-product__slider_mini')) {
+	const slideProductMini = new Swiper('.info-product__slider_mini', {
+		/* pagination: { //навигация: булеты, текущее положение
+			el: '.swiper-pagination',
+			clickable: true, //
+
+		}, */
+		
+		slidesPerView: 3,
+		
+
+		breakpoints: {
+			0: {
+				direction: 'vertical',
+				spaceBetween: 0,
+				//slidesPerView: 2,
+			},
+			478: {
+				direction: 'horizontal',
+				//slidesPerView: 3,
+				spaceBetween: 45,
+			}
+		}
+
+		//loop: true,
+	});
+
+	const slideProduct = new Swiper('.info-product__slider', {
+		/* pagination: { //навигация: булеты, текущее положение
+			el: '.swiper-pagination',
+			clickable: true, //
+
+		}, */
+		slidesPerView: 1,
+		//loop: true,
+		thumbs: {
+			swiper: slideProductMini,
+		},
+	});
+}
+
+
+
+
+if (document.querySelector('.slider-product-mini')) {
+
+	const slideProductMini = new Swiper('.slider-product-mini', {
+		/* pagination: { //навигация: булеты, текущее положение
+			el: '.swiper-pagination',
+			clickable: true, //
+
+		}, */
+		
+		slidesPerView: 3,
+		spaceBetween: 30,
+
+		loop: true,
+	});
+
+	const slideProduct = new Swiper('.slider-product', {
+		/* pagination: { //навигация: булеты, текущее положение
+			el: '.swiper-pagination',
+			clickable: true, //
+
+		}, */
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		keyboard: {
+			enabled: true,
+			onlyInViewport: true,
+		},
+		loop: true,
+		thumbs: {
+			swiper: slideProductMini,
+		},
+	});
+
+}
+
+
+
 //rating
 const ratings = document.querySelectorAll('.rating');
 if (ratings.length > 0) {
@@ -375,11 +458,11 @@ let _slideUp = (target, duration = 500, showmore = 0) => {
 
 const rangeslider = document.getElementById('range-slider');
 
-if(rangeslider) {
+if (rangeslider) {
 	noUiSlider.create(rangeslider, {
 		start: [200, 5000],
 		connect: true,
-		step:1,
+		step: 1,
 		range: {
 			'min': 200,
 			'max': 5000,
@@ -390,14 +473,14 @@ if(rangeslider) {
 	const input2 = document.getElementById('range-slider_2');
 	const inputs = [input1, input2];
 
-	
+
 
 	rangeslider.noUiSlider.on('update', (values, handle) => {
 		inputs[handle].value = Math.round(values[handle]);
 	});
 
 	const setRangeSlider = (i, value) => {
-		let arr = [null, null]; 
+		let arr = [null, null];
 		arr[i] = value;
 
 		rangeslider.noUiSlider.set(arr);
@@ -409,16 +492,4 @@ if(rangeslider) {
 		})
 	})
 };
-
-
-const filter = document.querySelector('.body-catalog__btn');
-
-filter.addEventListener('click', (e) => {
-	//
-	 const windowOuterWidth = window.outerWidth;
-	if(windowOuterWidth < 992) {
-		e.preventDefault();
-	} 
-
-})
 
