@@ -80,7 +80,7 @@
     padding: rem(15) rem(20);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: minmax(100px, 240px) 1fr;
 
     position: relative;
 

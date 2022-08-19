@@ -63,10 +63,12 @@
                 position: absolute;
                 top: 0;
                 right: rem(-20);
+                transform: rotate(0deg);
+                transition: transform 0.4s ease 0s;
             }
             &._spoller-active {
                 &::after {
-                    transition: transform 0.4s ease 0s;
+                
                     transform: rotate(90deg);
                 }
                 
@@ -119,7 +121,11 @@
 
     // .footer-contact__link
 
-    &__link {}
+    &__link_grey {
+        color: #838688;
+        font-size: rem(16);
+        font-weight: 400;
+    }
 }
 
 .footer-location {

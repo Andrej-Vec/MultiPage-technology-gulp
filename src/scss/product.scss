@@ -391,7 +391,7 @@
         min-height: rem(72);
         max-height: rem(190);
         flex-wrap: wrap;
-       /*  @media (max-width: $mobileSmall) {
+        /*  @media (max-width: $mobileSmall) {
             flex-direction: column;
         } */
     }
@@ -409,16 +409,16 @@
         &_mini {
             flex: 0 1 45%;
             margin-left: rem(0);
-            
+
             @media (max-width: $tablet) {
                 flex: 1 1 auto;
             }
 
             @media (max-width: $mobileSmall) {
                 height: 250px;
-                
+
             }
-          
+
             // display: grid;
             // grid-template-columns: 250px 1fr;
         }
@@ -449,7 +449,7 @@
         @media (max-width: $mobileSmall) {
             padding: 0;
             max-height: rem(50);
-            
+
         }
     }
 
@@ -486,7 +486,7 @@
     }
 
     &__text {
-        margin-bottom: rem(10);    
+        margin-bottom: rem(10);
     }
 }
 
@@ -507,4 +507,85 @@
         justify-content: center;
         grid-template-columns: repeat(1, minmax(280px, 0.7fr));
     }
+}
+
+
+
+
+
+
+.main-product {
+
+    // .main-product__tabs
+
+    &__tabs {
+        margin: rem(40) 0 rem(80);
+    }
+}
+
+.tabs {
+
+    // .tabs__list
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        background: #EDF2F6;
+        border-radius: 8px;
+        flex-wrap: wrap;
+
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+              align-items: flex-start;
+              padding-left: rem(12);
+        }
+    }
+
+    // .tabs__item
+
+    &__item {
+        padding: rem(25) rem(20);
+
+        @media (max-width: $mobileSmall) {
+            padding: rem(15) rem(10);
+        }
+    }
+
+    // .tabs__content"
+
+    &__content {}
+
+    // .tabs__body
+
+    &__body {
+        display: none;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(28);
+        line-height: rem(34);
+        margin: rem(40) 0 rem(30);
+    }
+
+    &__text {
+        margin-bottom: rem(16);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+//.tabs-active .tabs__body
+
+
+.tabs__list .tabs-active {
+    color: #2A5275;
+    box-shadow: inset 0px -2px 0px #2A5275;
+}
+
+.tabs__content .tabs-active {
+    display: block;
 }
