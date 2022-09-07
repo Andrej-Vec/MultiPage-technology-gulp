@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main class="page page_home">
+		<section class="page__slider slider ">
+			<div class="slider__container slider-block">
+				<div class="slider-block__body">
+					<div class="swiper attempt">
+						<div class="swiper-wrapper  slider-block__items">
+							<div class="swiper-slide slider-block__item item-slider">
+								<div class="item-slider__info info-slider">
+									<div class="info-slider__title"> <a href="#">Apple Watch<br>Series 6 </a></div>
+									<div class="info-slider__describe"><a href="#">уже в наличии</a></div>
+								</div>
+								<div class="item-slider__media">
+									<a href="#"><img class="media__img" src="@img/watch1.png" alt="watch"></a>
+								</div>
+								<img class="item-slider__waves" src="@img/waves.png" alt="waves">
+							</div>
+							<div class="swiper-slide slider-block__item item-slider">
+								<div class="item-slider__info info-slider">
+									<div class="info-slider__title"> <a href="#">Apple Watch<br>Series 5 </a> </div>
+									<div class="info-slider__describe"><a href="#">уже в наличии</a></div>
+								</div>
+								<div class="item-slider__media">
+									<a href="#"><img class="media__img" src="@img/watch1.png" alt="watch"></a>
+								</div>
+								<img class="item-slider__waves" src="@img/waves.png" alt="waves">
+							</div>
+							<div class="swiper-slide slider-block__item item-slider">
+								<div class="item-slider__info info-slider">
+									<div class="info-slider__title"> <a href="#">Apple Watch<br>Series 4 </a></div>
+									<div class="info-slider__describe"><a href="#">уже в наличии</a></div>
+								</div>
+								<div class="item-slider__media">
+									<a href="#"><img class="media__img" src="@img/watch1.png" alt="watch"></a>
+								</div>
+								<img class="item-slider__waves" src="@img/waves.png" alt="waves">
+							</div>
+							<div class="swiper-slide slider-block__item item-slider">
+								<div class="item-slider__info info-slider">
+									<div class="info-slider__title"> <a href="#">Apple Watch<br>Series 3 </a></div>
+									<div class="info-slider__describe"><a href="#">уже в наличии</a></div>
+								</div>
+								<div class="item-slider__media media">
+									<a href="#"><img class="media__img" src="@img/watch1.png" alt="watch"></a>
+								</div>
+								<img class="item-slider__waves" src="@img/waves.png" alt="waves">
+							</div>
+							<div class="swiper-slide slider-block__item item-slider">
+								<div class="item-slider__info info-slider">
+									<div class="info-slider__title"> <a href="#">Apple Watch<br>Series 2</a></div>
+									<div class="info-slider__describe"><a href="#">уже в наличии</a></div>
+								</div>
+								<div class="item-slider__media">
+									<a href="#"><img class="media__img" src="@img/watch1.png" alt="watch"></a>
+								</div>
+								<img class="item-slider__waves" src="@img/waves.png" alt="waves">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('html/products-block.html',{
+		"title": "Хиты продаж"
+		})
+		@@include('html/products-block.html',{
+		"title": "Новинки"
+		})
+		<section class="page-sale">
+			<div class="page-sale__container sale-page">
+				<div class="sale-page__block block-sale">
+					<div class="block-sale__discounts discounts-sale">
+						<div class="discounts-sale__text">
+							<a href="#">Скидки до 30%<br>на сигвеи</a>
+						</div>
+						<div class="discounts-sale__img">
+							<a href=""><img src="@img/segway-sale.png" width="139px" alt="segway"></a>
+						</div>
+					</div>
+					<div class="block-sale__offer offer-sale">
+						<div class="offer-sale__text">
+							<a href="#">Неделя<br>смарт часов</a>
+						</div>
+						<div class="offer-sale__img">
+							<a href=""><img src="@img/watch-sale.png" width="139px" alt="watch"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('html/products-block.html',{
+		"title": "Сигвеи"
+		})
+		@@include('html/products-block.html',{
+		"title": "Моноколеса"
+		})
+		<section class="page-sale">
+			<div class="page-sale__container sale-page">
+				<div class="sale-page__block block-sale">
+					<div class="block-sale__discounts discounts-sale">
+						<div class="discounts-sale__text">
+							<a href="#">Распродажа<br>до — 50%</a>
+						</div>
+						<div class="discounts-sale__img">
+							<a href=""><img src="@img/percent.png" width="139px" alt="segway"></a>
+						</div>
+					</div>
+					<div class="block-sale__offer offer-sale">
+						<div class="offer-sale__text">
+							<a href="#">Smart Balance Premium<br>по специальной цене</a>
+						</div>
+						<div class="offer-sale__img">
+							<a href=""><img src="@img/watch1.png" width="139px" alt="watch"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('html/products-block.html',{
+		"title": "Электровелосипеды"
+		})
+		<section class="page-news">
+			<div class="page-news__container">
+				<div class="page-news__header news-page-header">
+					<h2 class="news-page-header__title">Новости</h2>
+					<a href="#" class="news-page-header__more more">Читать все</a>
+				</div>
+				<div class="page-news__body news-page-body">
+					<a href="#" class="news-page-body__shop shop-news">
+						<div class=" ">
+							<h3 class="shop-news__title">Открытие нового магазина</h3>
+							<p class="shop-news__describe">Разнообразный и богатый опыт говорит нам, что консультация
+								с широким активом требует от нас анализа анализа существующих паттернов поведения</p>
+							<div class="shop-news__more more-news">
+								<span class="more-news__link more">Подробнее</span>
+								<div class="more-news__date">05 июня 2021</div>
+							</div>
+						</div>
+					</a>
+
+					<a class="news-page-body__work work-news">
+						<h3 class="work-news__title">Работа в праздничные дни</h3>
+						<p class="work-news__describe">Принимая во внимание показатели успешности,
+							социально-экономическое развитие играет определяющее значение для вывода текущих активов</p>
+						<div class="work-news__more more-news">
+							<span class="more-news__link more">Подробнее</span>
+							<div class="more-news__date">05 июня 2021</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
